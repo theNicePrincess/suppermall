@@ -32,9 +32,33 @@ export function request(config){
     console.log(err);
   })
 
-
   // 3、发送真正的网络请求
   return instance1(config)
+}
+
+export function request2(config){
+  // 2、创建第二个axios的实例
+  const instance2 = axios.create({
+    baseURL:'http://localhost:8080',
+    timeout:5000
+  })
+
+  instance2.interceptors.request.use(config => {
+    // 请求成功
+    // 1、比如说config中的一些信息不符合服务器的要求
+
+    // 2、比如发送网络请求的时候，都希望在界面中显示一个请求的图标
+
+    // 3、某些网络请求（比如登录（token）），必须携带一些特殊的信息，如果没有携带可以提示用户
+
+    return config;
+  },err => {
+    // 请求失败
+    console.log(err);
+  })
+
+  // 3、发送真正的网络请求
+  return instance2(config)
 }
 
 

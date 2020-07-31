@@ -1,32 +1,125 @@
-[
-  {
-    "id":"100001",
-    "show": {
-      "img":"https://s18.mogucdn.com/mlcdn/c45406/180925_6e2l64b5dek1j9hka8fk0lf7g1l46_1080x1080.jpg_300x400.v1cAC.40.webp"
+{
+  "pop":[
+    {
+      "id":"100001",
+      "show": {
+        "img":"https://s17.mogucdn.com/mlcdn/c45406/180920_1jh1lj62l85j29akiijhaaaidgefe_796x1194.jpg_300x400.v1cAC.40.webp"
+      },
+      "price":66,
+      "cfav":893,
+      "title":"仿水貂毛套头针织毛衣潮长袖打底衫2018秋装韩版新款女装时尚百搭显瘦上衣"
     },
-    "price":23.9,
-    "cfav":893,
-    "title":"时装女裤"
+    {
+      "id":"100002",
+      "show":{
+        "img":"https://s18.mogucdn.com/mlcdn/c45406/180922_61611jf30ak2la355lldi2le5kb8i_640x960.jpg_300x400.v1cAC.40.webp"},
+      "price":68,
+      "cfav":211,
+      "title":"2018秋季新款韩版中长款V领针织吊带黑色背心连衣裙chic女装A字打底裙"
+    },
+    {
+      "id":"100003",
+      "show":{
+        "img":"https://s2.mogucdn.com/mlcdn/c45406/180805_62khe7e58lg79g87hdi3hgb6alk6j_640x854.jpg_300x400.v1cAC.40.webp"},
+      "price":68.8,
+      "cfav":211,
+      "title":"针织衫外套女学院风宽松V领长袖百搭短款开衫学生原宿时尚显瘦薄款早秋新款女装"
+    },
+    {
+      "id":"100004",
+      "show":{
+        "img":"https://s2.mogucdn.com/mlcdn/55cf19/171116_419jj3he8cibljf2h20k34a53g7g0_640x960.jpg_300x400.v1cAC.40.webp"},
+      "price":99,
+      "cfav":432,
+      "title":"2019秋冬新款百搭打底衫白色衬衫女加绒韩版宽松灯笼长袖上衣"
+    },
+    {
+      "id":"100005",
+      "show":{
+        "img":"https://s2.mogucdn.com/mlcdn/c45406/180805_62khe7e58lg79g87hdi3hgb6alk6j_640x854.jpg_300x400.v1cAC.40.webp"},
+      "price":68.8,
+      "cfav":211,
+      "title":"针织衫外套女学院风宽松V领长袖百搭短款开衫学生原宿时尚显瘦薄款早秋新款女装"
+    },
+    {
+      "id":"100006",
+      "show":{
+        "img":"https://s2.mogucdn.com/mlcdn/55cf19/171116_419jj3he8cibljf2h20k34a53g7g0_640x960.jpg_300x400.v1cAC.40.webp"},
+      "price":99,
+      "cfav":432,
+      "title":"2019秋冬新款百搭打底衫白色衬衫女加绒韩版宽松灯笼长袖上衣"
+    }
+  ],
+  "new":[
+    {
+      "id":"200001",
+      "show": {
+        "img":"https://s2.mogucdn.com/mlcdn/c45406/180922_61611jf30ak2la355lldi2le5kb8i_640x960.jpg_300x400.v1cAC.40.webp"
+      },
+      "price":56,
+      "cfav":654,
+      "title":"2018秋季新款韩版中长款V领针织吊带黑色背心连衣裙chic女装A字打底裙"
+    },
+    {
+      "id":"200002",
+      "show":{
+        "img":"https://s2.mogucdn.com/mlcdn/c45406/180921_4jgf9j358k2g78b74hjjcc01d5cc5_640x960.jpg_300x400.v1cAC.40.webp"},
+      "price":129,
+      "cfav":893,
+      "title":"白色卫衣女薄款慵懒风2018新款宽松韩版学生百搭圆领套头春秋长袖卫衣"
+    },
+    {
+      "id":"200003",
+      "show": {
+        "img":"https://s2.mogucdn.com/mlcdn/c45406/180922_61611jf30ak2la355lldi2le5kb8i_640x960.jpg_300x400.v1cAC.40.webp"
+      },
+      "price":56,
+      "cfav":654,
+      "title":"2018秋季新款韩版中长款V领针织吊带黑色背心连衣裙chic女装A字打底裙"
+    },
+    {
+      "id":"200004",
+      "show":{
+        "img":"https://s2.mogucdn.com/mlcdn/c45406/180921_4jgf9j358k2g78b74hjjcc01d5cc5_640x960.jpg_300x400.v1cAC.40.webp"},
+      "price":129,
+      "cfav":893,
+      "title":"白色卫衣女薄款慵懒风2018新款宽松韩版学生百搭圆领套头春秋长袖卫衣"
+    }
+  ],
+  "sell":[
+  {
+    "id":"300001",
+    "show": {
+      "img":"https://s2.mogucdn.com/mlcdn/c45406/180827_1590j44g2bk619i6655ji20ihikfb_640x960.jpg_300x400.v1cAC.40.webp"
+    },
+    "price":234,
+    "cfav":667,
+    "title":"秋装女新款套装时尚晚晚风气质chic港味女神网红两件套装俏皮"
   },
   {
-    "id":"100002",
+    "id":"300002",
     "show":{
-    "img":"https://s11.mogucdn.com/mlcdn/1689c6/171020_3elc4087he5d801gd8348b35fce4l_450x600.jpg_240x360.v1cAC.40.webp"},
-    "price":23.9,
-    "cfav":893,
-    "title":"时装女裤"
+      "img":"https://s2.mogucdn.com/mlcdn/c45406/191023_80203dghgdjhg08cc4f22ha6g21dh_3999x5999.jpg_300x400.v1cAC.40.webp"},
+    "price":129,
+    "cfav":988,
+    "title":"秋季韩版宽松拼色白毛衣皮裙a字裙子半身裙女时尚套装两件套新款"
   },
-  {
-    "id":"100003",
-    "show":{
-    "img":"https://s11.mogucdn.com/mlcdn/1689c6/171020_3elc4087he5d801gd8348b35fce4l_450x600.jpg_240x360.v1cAC.40.webp"},
-    "price":23.9,
-    "cfav":893,
-    "title":"时装女裤"},
-  {
-    "id":"100004",
-    "show":{"img":"https://s11.mogucdn.com/mlcdn/1689c6/171020_3elc4087he5d801gd8348b35fce4l_450x600.jpg_240x360.v1cAC.40.webp"},
-    "price":23.9,
-    "cfav":893,
-    "title":"时装女裤"}
+    {
+      "id":"300003",
+      "show": {
+        "img":"https://s2.mogucdn.com/mlcdn/c45406/180827_1590j44g2bk619i6655ji20ihikfb_640x960.jpg_300x400.v1cAC.40.webp"
+      },
+      "price":234,
+      "cfav":667,
+      "title":"秋装女新款套装时尚晚晚风气质chic港味女神网红两件套装俏皮"
+    },
+    {
+      "id":"300004",
+      "show":{
+        "img":"https://s2.mogucdn.com/mlcdn/c45406/191023_80203dghgdjhg08cc4f22ha6g21dh_3999x5999.jpg_300x400.v1cAC.40.webp"},
+      "price":129,
+      "cfav":988,
+      "title":"秋季韩版宽松拼色白毛衣皮裙a字裙子半身裙女时尚套装两件套新款"
+    }
 ]
+}

@@ -1,5 +1,7 @@
 <template>
-  $END$
+  <div class="cart">
+    我是购物车页面
+  </div>
 </template>
 
 <script>

@@ -1,0 +1,84 @@
+{
+  "result": {
+    "itemInfo": {
+      "topImages": [
+        "https://s5.mogucdn.com/mlcdn/c45406/180821_65cg8if8fgb9k20ice7c6eb8c6iki_640x960.jpg_640x960.v1cAC.70.webp",
+        "https://s5.mogucdn.com/mlcdn/c45406/180821_7c72d2c2894kblc4l94jae9lci0al_640x960.jpg_640x960.v1cAC.70.webp",
+        "https://s5.mogucdn.com/mlcdn/c45406/180821_13ii60fde8dd8ie2c1k1je11697a7_640x960.jpg_640x960.v1cAC.70.webp",
+        "https://s5.mogucdn.com/mlcdn/c45406/180821_0gaai0hb9a7ad6f5h7kcehf1j3j4h_640x960.jpg_640x960.v1cAC.70.webp",
+        "https://s5.mogucdn.com/mlcdn/c45406/180821_585lk4745clf529kei6333lhhe4i8_640x960.jpg_640x960.v1cAC.70.webp"
+      ],
+
+      "title": "2020春秋装新款韩版气质女神名媛小香风微胖显瘦职业套装",
+      "price": "￥39.9",
+      "oldPrice": "￥69.9",
+      "discountDesc": "活动价",
+      "discountBgColor": "#f13e3a"
+    },
+    "columns": ["销量 1580","收藏 33人","默认快递"],
+    "services": [
+      {"icon": "https://s10.mogucdn.com/mlcdn/c45406/180417_25kbfg1c3hdbd120394ji4b11bk2k_36x36.png_80x80.v1cAC.40.webp","name": "退货补运费"},
+      {"icon":"https://s10.mogucdn.com/mlcdn/c45406/180417_25kbfg1c3hdbd120394ji4b11bk2k_36x36.png_80x80.v1cAC.40.webp" ,"name": "全国包邮"},
+      {"icon": "https://s10.mogucdn.com/mlcdn/c45406/180417_25kbfg1c3hdbd120394ji4b11bk2k_36x36.png_80x80.v1cAC.40.webp","name": "7天无理由退货"},
+      {"icon":"https://s10.mogucdn.com/mlcdn/c45406/180417_25kbfg1c3hdbd120394ji4b11bk2k_36x36.png_80x80.v1cAC.40.webp" ,"name": "72小时发货"}
+    ],
+    "shopInfo": {
+      "shopLogo": "https://s11.mogucdn.com/p2/161124/33u8nk_5i344i40g45779dl4kc17d9dfgb03_200x200.jpg",
+      "name": "莱玫店",
+      "score": [
+        {"name": "描述相符", "score": 4.73, "isBetter": false},
+        {"name": "质量满意", "score": 4.73, "isBetter": false}
+      ],
+      "saleDescV2": "在架商品 49",
+      "shopLabels": [
+        {"id": 201, "text": "2.7万人关注"},
+        {"id": 303, "text": "累计销量17.1万+"},
+        {"id": 501, "text": "24小时发货百分百"},
+        {"id": 602, "text": "3年老字号"}
+      ],
+      "level": 2
+    },
+    "detailInfo": {
+      "splitDetailImage": false,
+      "desc": "【美丽女人只需要这一支 】在这个美貌与颜值齐飞的时代，找到一款合适自己的口红不容易。你必须带走的理由：\n①丝丝质感，触感丝滑、打造迷人的性感双唇。\n②几秒搞定，出门随时随地都可以使用。\n③不易断， 小巧玲珑的外形携带方便，令护唇效果加倍",
+      "detailImage": [{
+        "desc": "",
+        "key": "商品信息",
+        "anchor": "beauty_info",
+        "list": ["https://s5.mogucdn.com/mlcdn/c45406/171113_6hh31h9fbie7gjda9chldgdca0cji_790x480.jpg"]
+      }, {
+        "desc": "【美丽女人只需要这一支 】在这个美貌与颜值齐飞的时代，找到一款合适自己的口红不容易。你必须带走的理由：\n①丝丝质感，触感丝滑、打造迷人的性感双唇。\n②几秒搞定，出门随时随地都可以使用。\n③不易断， 小巧玲珑的外形携带方便，令护唇效果加倍",
+        "key": "商品细节",
+        "anchor": "product_specifics",
+        "list": ["https://s5.mogucdn.com/mlcdn/c45406/190802_25ehc250f1k6ddacakkh3458cbb2h_790x816.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_86d9beabfkg0gefig9gd1l8f170ha_790x1041.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_83if7hgci700llelci5lcki569d8j_790x1021.jpg", "https://s11.mogucdn.com/mlcdn/c45406/190802_4056jea83dg5add9k010a10l6946i_790x1068.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_8414g466lc0ilgk16g6c3bd0eb3f8_790x614.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_0i64ed9d4h7ec9d8db0fejd9aa1ef_790x804.jpg", "https://s11.mogucdn.com/mlcdn/c45406/190802_33ca8j3hd63ehd2c4fc3ab1c6i73c_790x1032.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_0lf3gke33adjciae9lkc93057e3d5_790x804.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_147f62d9l76i4g72cdg1c1kggeic2_790x792.jpg", "https://s11.mogucdn.com/mlcdn/c45406/190802_4f569l9gg18kl6cg8k69l9i628ih9_790x800.jpg", "https://s11.mogucdn.com/mlcdn/c45406/190802_88ilie31kc7l9l7i6e387300bd946_790x1150.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_06llcikbf1g99b3lk953abb1758l4_790x1051.jpg"]
+      }, {
+        "desc": "",
+        "key": "使用说明",
+        "anchor": "product_use_func",
+        "list": ["https://s5.mogucdn.com/mlcdn/c45406/190802_0d9fagkj31hcfgd7hj63gek2ej4c0_790x851.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_3d35d28c779gfh93g8d5di7bea0b1_790x857.jpg", "https://s11.mogucdn.com/mlcdn/c45406/190802_5fgf27l4909b6eleba0jc8bkeh3di_790x855.jpg", "https://s11.mogucdn.com/mlcdn/c45406/190802_25jlc5ekbab14khd0g5hh1460jjcf_790x858.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_76301ha6labiicf2j52g7gfe6j4jb_790x849.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_6k61h0gjbb3d2cbi590c877c7ihjh_790x870.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_0hgg2el05ah7l5fj9h372186h3baf_790x855.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_4a5e0d149k6ge0e4e3gffb3ea4dal_790x852.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_01506b038h374cij9jhf7aa3jj98g_790x849.jpg", "https://s11.mogucdn.com/mlcdn/c45406/190802_27i5e0c6h13l30jhdljih6cig24j0_790x851.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_544lgbh2782jjkc1g7k43dlg25b2c_790x645.jpg", "https://s5.mogucdn.com/mlcdn/c45406/190802_448c474jbb41g9dhef28a9i74bi49_790x738.jpg", "https://s11.mogucdn.com/mlcdn/c45406/190802_24i13073g9gi0g625g1ebcaai84h0_790x1209.jpg", "https://s11.mogucdn.com/mlcdn/c024f5/190417_2d51ljj2a42lddkg49ibag494g3ca_1125x540.png"]
+      }]
+    },
+    "itemParams": {
+      "set": {
+        "产地": "广东省",
+        "功效": "防脱色,易上色,保湿,持久,补水",
+        "颜色": "3＃芭比粉,5＃复古红,9＃南瓜色,10＃吃土色,6＃豆沙粉,7＃姨妈色,1＃热情红,4＃红橙色,8＃西柚色,2＃玫紫红",
+        "保质期": "3年",
+        "PA值": "其他",
+        "适合人群": "通用",
+        "适合肤质": "所有肤质",
+        "化妆品特性": "咬唇妆,性感裸妆,润唇膏,不脱色,裸色",
+        "上市时间": "2017",
+        "国家": "中国内地",
+        "是否防晒": "否",
+        "颜色数": "10",
+        "月份": "2月",
+        "是否特殊化妆品": "否",
+        "规格类型": "正常规格",
+        "是否进口": "否"
+      },
+      "key": "产品参数",
+      "anchor": "product_info"
+    }
+  }
+}

@@ -129,6 +129,7 @@
 
         this.$refs.tabControl1.currentIndex = index;
         this.$refs.tabControl2.currentIndex = index;
+
       },
 
       //组件不可以直接监听点击事件呢 @click.native="backClick"

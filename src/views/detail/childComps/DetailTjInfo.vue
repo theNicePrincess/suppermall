@@ -1,12 +1,32 @@
 <template>
   <div class="comment-info">
-    <p class="title">用户评论</p>
+    <p class="title">用户推荐</p>
     <div class="comBox">
       <p>你的小可爱</p>
       <div>
         使用方便，效果明显很喜欢使用方便，效果明显很喜欢使用方便，效果明显很喜欢使用方便，效果明显很喜欢使用方便，效果明显很喜欢s
       </div>
       <ul>
+        <li>lala1</li>
+        <li>lala2</li>
+        <li>lala3</li>
+        <li>lala4</li>
+        <li>lala5</li>
+        <li>lala6</li>
+        <li>lala7</li>
+        <li>lala8</li>
+        <li>lala9</li>
+        <li>lala10</li>
+        <li>lala11</li>
+        <li>lala12</li>
+        <li>lala13</li>
+        <li>lala14</li>
+        <li>lala15</li>
+        <li>lala16</li>
+        <li>lala17</li>
+        <li>lala18</li>
+        <li>lala19</li>
+        <li>lala20</li>
         <li>lala1</li>
         <li>lala2</li>
         <li>lala3</li>

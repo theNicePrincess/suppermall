@@ -14,6 +14,7 @@ export class GoodsInfo {
   // 构造函数
   constructor(itemInfo,columns,services) {
     this.title = itemInfo.title;
+    this.desc = itemInfo.desc;
     this.price = itemInfo.price;
     this.oldPrice = itemInfo.oldPrice;
     this.discount = itemInfo.discountDesc;

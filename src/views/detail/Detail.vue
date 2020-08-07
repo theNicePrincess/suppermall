@@ -1,5 +1,5 @@
 <template>
-  <div class="detail" id="detail">
+  <div class="detail" id="detail" @mousewheel.prevent>
     <detail-nav-bar @titleClick="titleClick" ref="detaiNav" class="detail-nav" />
     <scroll @scroll="contentScroll" :probe-type="3" ref="scroll" class="scrollBox">
       <detail-swiper :topImages="topImages"></detail-swiper>
@@ -10,6 +10,8 @@
       <detail-com-info ref="comment" />
       <detail-tj-info ref="tj" />
     </scroll>
+    <back-top class="backTop" @click.native="backClick" v-show="isShowBackTop" />
+    <detail-bottom-bar @addCart = "addToCart"/>
   </div>
 
 </template>
@@ -27,7 +29,9 @@
   import { getDetail,GoodsInfo,Shop } from 'network/detail'
   import Scroll from "components/common/scroll/Scroll"
   import {debounce} from "../../common/utils";
-  // import {itemListenerMixin} from "common/mixin";
+  import { backTopMixin } from "common/mixin";
+
+  import DetailBottomBar from "./childComps/DetailBottomBar";
 
   export default {
     name: "Detail",
@@ -41,7 +45,7 @@
         paramsInfo:{},
         itemImgListener:null,
         themeTopYs:[],
-        currentIndex:0
+        currentIndex:0,
       }
     },
     created() {
@@ -72,9 +76,6 @@
           // 但是图片依然没有加载完成（目前offsetTop 不包含图片）
           // offsetTop值不对的时候，都是图片问题。
         });
-
-
-
       })
     },
     components:{
@@ -86,9 +87,10 @@
       DetailGoodsInfo,
       DetailParInfo,
       DetailComInfo,
-      DetailTjInfo
+      DetailTjInfo,
+      DetailBottomBar,
     },
-    // mixins:[itemListenerMixin],
+    mixins:[backTopMixin],
     methods:{
       imageLoad(){
         this.$refs.scroll.ref();
@@ -104,6 +106,7 @@
         this.themeTopYs.push(this.$refs.params.$el.offsetTop);
         this.themeTopYs.push(this.$refs.comment.$el.offsetTop);
         this.themeTopYs.push(this.$refs.tj.$el.offsetTop);
+        this.themeTopYs.push(Number.MAX_VALUE);
       },
       contentScroll(pos){
         const posY = -pos.y;
@@ -118,13 +121,31 @@
         }*/
 
         let length = this.themeTopYs.length;
-        for(let i=0;i<length;i++){
-          if( this.currentIndex !== i && (i < length -1 && posY >= this.themeTopYs[i] && posY < this.themeTopYs[i+1]) || (i === length -1 && posY >= this.themeTopYs[i])){
+        for(let i=0;i<length-1;i++){
+          if( this.currentIndex !== i && (posY >= this.themeTopYs[i] && posY < this.themeTopYs[i+1])){
             this.currentIndex = i;
             this.$refs.detaiNav.currentIndex = this.currentIndex;
           }
         }
+
+        //3、是否显示回到顶部
+        this.isShowBackTop = (-pos.y) >= 1000
+      },
+      // 添加到购物车
+      addToCart(){
+        // 1、获取购物车需要展示商品信息
+        const product= {}
+        product.image = this.topImages[0];
+        product.title = this.goods.title;
+        product.desc = this.goods.desc;
+        product.price = this.goods.price;
+        product.id = this.id;
+        // 2、将商品添加到购物车
+        // this.$store.commit('addCart',product)
+        this.$store.dispatch('addCart',product)
+
       }
+
     },
     mounted() {
       //使用mixin（混入）
@@ -146,6 +167,6 @@
 
 <style scoped>
 .detail{position: relative;z-index: 10;background-color: #fff;height: 100vh;}
-  .scrollBox{height:calc( 100% - 44px);background-color: #fff}
+  .scrollBox{height:calc( 100% - 44px - 49px);background-color: #fff}
   .detail-nav{position: relative;background-color: #fff;z-index: 9;}
 </style>

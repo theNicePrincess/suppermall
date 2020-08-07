@@ -1,24 +1,27 @@
-import { ADD_CARTCOUNT, ADD_CARTLIST } from "./mutations_type";
-
+import {
+  ADD_COUNTER,
+  ADD_TO_CART
+} from './mutations_type'
 export default {
-  ChangeCart(context, payload) {
-    return new Promise((reslove, reject) => {
-      let oldCart = null;
-      for (const i of context.state.cartList) {
-        if (i.iid == payload.iid) {
-          oldCart = i;
-          break;
-        }
+  addCart(context,payload){
+    /*let oldProduct = null;
+    // 新添加的商品，判断是否已经存在该商品，比较id值
+    for(let item of state.cartList){
+      if(item.id === payload.id){
+        oldProduct = item;
       }
-      if (oldCart) {
-        context.commit(ADD_CARTCOUNT, oldCart);
-        reject();
-      } else {
-        payload.checked = true;
-        payload.count = 1;
-        context.commit(ADD_CARTLIST, payload);
-        reslove();
-      }
-    });
+    }*/
+
+    let oldProduct = context.state.cartList.find( item => {
+      return item.id === payload.id
+    })
+
+    // 2、判断oldProduct
+    if(oldProduct){
+      context.commit(ADD_COUNTER,oldProduct)
+    }else{
+      payload.count = 1;
+      context.commit(ADD_TO_CART,payload)
+    }
   }
 };

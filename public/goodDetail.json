@@ -13,7 +13,8 @@
       "price": "￥39.9",
       "oldPrice": "￥69.9",
       "discountDesc": "活动价",
-      "discountBgColor": "#f13e3a"
+      "discountBgColor": "#f13e3a",
+      "desc": "商品信息的描述"
     },
     "columns": ["销量 1580","收藏 33人","默认快递"],
     "services": [

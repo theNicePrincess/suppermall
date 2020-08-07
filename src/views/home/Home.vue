@@ -24,7 +24,7 @@
 
     </scroll>
 
-    <back-top class="backTop" @click.native="backClick" v-show="isShow" />
+    <back-top class="backTop" @click.native="backClick" v-show="isShowBackTop" />
   </div>
 </template>
 
@@ -40,7 +40,7 @@
   import BackTop from "components/content/backTop/BackTop";
   import { getHomeMultidata,getHomeGoods} from "network/home"
   import {debounce} from "common/utils";
-  import { itemListenerMixin } from "common/mixin";
+  import { backTopMixin } from "common/mixin";
 
   export default {
     name: "Home",
@@ -52,7 +52,6 @@
       TabControl,
       GoodsList,
       Scroll,
-      BackTop
     },
     data(){
       return {
@@ -64,14 +63,14 @@
           'sell':{page:0,list:[]},
         },
         currentType:'pop',
-        isShow:false,
+        isShowBackTop:false,
         tabOffsetTop:0,
         isTabFixed:false,
         saveY:0,
         itemImgListener:null
       }
     },
-    // mixins:[itemListenerMixin],
+    mixins:[backTopMixin],
     computed:{
       showGoods(){
         return this.goods[this.currentType].list
@@ -131,14 +130,9 @@
         this.$refs.tabControl2.currentIndex = index;
 
       },
-
-      //组件不可以直接监听点击事件呢 @click.native="backClick"
-      backClick(){
-        this.$refs.scroll.scrollTo(0,0); // 500毫秒内回到顶部
-      },
       contentScroll(pos){
         // 1、判断backTop是否显示
-        this.isShow = (-pos.y) >= 1000
+        this.isShowBackTop = (-pos.y) >= 1000
 
         //2、决定tabControl是否吸顶（position：fixed）
         this.isTabFixed = (-pos.y) >= this.tabOffsetTop

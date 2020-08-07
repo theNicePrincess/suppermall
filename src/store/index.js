@@ -1,20 +1,23 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-import actions from "./actions";
 import mutations from "./mutations";
-
-Vue.use(Vuex);
+import actions from "./actions";
+import getters from "./getters";
+// 1、安装插件
+Vue.use(Vuex)
 
 const state = {
-  slideCount: 0,
-  cartList: [],
-  uid: ""
-};
+  cartList:[]
+}
+
+// 2、创建store对象
 const store = new Vuex.Store({
   state,
   mutations,
-  actions
-});
+  actions,
+  getters
+})
 
-export default store;
+// 3、挂载vuex
+export default  store

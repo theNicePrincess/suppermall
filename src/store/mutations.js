@@ -1,16 +1,15 @@
-import { ADD_CARTCOUNT, ADD_CARTLIST, CHANGE_UID } from "./mutations_type";
-
+import {
+  ADD_COUNTER,
+  ADD_TO_CART
+} from './mutations_type'
 export default {
-  slideCountChange(state, num) {
-    state.slideCount += num;
-  },
-  [ADD_CARTCOUNT](state, payload) {
+  // mutations 唯一的目的就是修改state中的状态
+  // mutations 中的每个方法尽可能完成事件比较单一一点
+  [ADD_COUNTER](state,payload){
     payload.count += 1;
   },
-  [ADD_CARTLIST](state, payload) {
-    state.cartList.push(payload);
-  },
-  [CHANGE_UID](state, payload) {
-    state.uid = payload;
+  [ADD_TO_CART](state,payload){
+    payload.checked = true
+    state.cartList.push(payload)
   }
 };

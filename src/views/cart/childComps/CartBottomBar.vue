@@ -9,38 +9,57 @@
         <div>合计：￥<span>{{totalPrice}}</span></div>
       </div>
     </div>
-    <div class="payBox">
-      去结算(8)
+    <div class="payBox" @click="calcClick">
+      去结算({{checkedLength}})
     </div>
   </div>
 </template>
 
 <script>
   import CheckButton from "components/content/checkButton/CheckButton";
+  import {mapGetters} from 'vuex'
   export default {
     name: "CartBottomBar",
     data(){
       return {
-        allCheck:false
+
       }
     },
     methods:{
       checkChange(){
-        this.allCheck = !this.allCheck;
+        if(this.allCheck){ //全部选中
+          this.cartList.forEach(item => item.checked = false)
+        }else{ // 部分或全部不选中
+          this.cartList.forEach(item => item.checked = true)
+        }
+      },
+      calcClick(){
+        if(!this.allCheck){
+          this.$toast.show('请选择购买的商品',2000)
+        }
       }
     },
     components:{
       CheckButton
     },
     computed:{
+      ...mapGetters(['cartList']),
       totalPrice(){
-
-        console.log(this.$store.state.cartList);
-        return this.$store.state.cartList.filter((item) => {
+        return this.cartList.filter((item) => {
           return item.checked
         }).reduce((preValue,item) => {
-          return (item.price.split("￥")[1] * item.count).toFixed(2)
-        },0)
+          return preValue + item.price.split("￥")[1] * item.count
+        },0).toFixed(2)
+      },
+      checkedLength(){
+        return this.cartList.filter(item => {
+          return item.checked
+        }).length
+      },
+      allCheck(){
+        //return !(this.cartList.filter( item => !item.checked).length)
+        if(this.cartList.length === 0) return false
+        return !this.cartList.find(item => !item.checked)
       }
     }
   }
